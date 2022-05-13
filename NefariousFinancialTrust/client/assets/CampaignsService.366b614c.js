@@ -1,0 +1,1 @@
+import{a as n,A as i}from"./index.82ede532.js";class t{async getCampaigns(){const a=await n.get("api/campaigns");i.campaigns=a.data}async getCampaignById(a){const s=await n.get("api/campaigns/"+a);i.campaign=s.data}async getDonationsByCampaignId(a){const s=await n.get(`api/campaigns/${a}/donations`);i.donations=s.data}}const c=new t;export{c};
